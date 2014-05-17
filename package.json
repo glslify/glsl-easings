@@ -1,6 +1,6 @@
 {
   "name": "glsl-easings",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "linear.glsl",
   "scripts": {
     "test": "beefy test.js --open -- -t glslify"
