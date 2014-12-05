@@ -3,7 +3,7 @@
 #endif
 
 float sineInOut(float t) {
-  return 0.5 * 1.0 - cos(t * PI);
+  return -0.5 * (cos(PI * t) - 1.0);
 }
 
 #pragma glslify: export(sineInOut)
