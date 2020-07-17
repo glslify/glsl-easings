@@ -1,7 +1,9 @@
 float cubicInOut(float t) {
-  return t < 0.5
-    ? 4.0 * t * t * t
-    : 1. - 4.0 * pow(1. - t, 3.0);
+  if (t < 0.5) {
+    return 4 * t * t * t
+  }
+  float u = 1.0 - t;
+  return 1.0 - 4.0 * u * u * u;
 }
 
 #pragma glslify: export(cubicInOut)
