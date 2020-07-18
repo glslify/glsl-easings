@@ -1,5 +1,6 @@
 float quarticOut(float t) {
-  return pow(t - 1.0, 3.0) * (1.0 - t) + 1.0;
+  float u = 1.0 - t;
+  return 1.0 - u * u * u * u;
 }
 
 #pragma glslify: export(quarticOut)
