@@ -1,5 +1,5 @@
-float qinticIn(float t) {
-  return pow(t, 5.0);
+float quinticIn(float t) {
+  return t*t*t*t*t;
 }
 
-#pragma glslify: export(qinticIn)
+#pragma glslify: export(quinticIn)

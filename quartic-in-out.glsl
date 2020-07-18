@@ -1,7 +1,9 @@
 float quarticInOut(float t) {
-  return t < 0.5
-    ? +8.0 * pow(t, 4.0)
-    : -8.0 * pow(t - 1.0, 4.0) + 1.0;
+  if (t < 0.5) {
+    return 8.0 * t * t * t * t;
+  }
+  float u = 1.0 - t;
+  return 1.0 - 8.0 * u * u * u * u;
 }
 
 #pragma glslify: export(quarticInOut)

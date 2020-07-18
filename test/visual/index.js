@@ -51,7 +51,7 @@ var shaders = {
   , sineIn           : glslify({ frag: './frag.glsl', vert: './sine-in.glsl' })(gl)
 }
 
-var linear   = glslify({ frag: './blue.glsl', vert: './linear.glsl' })(gl)
+var linear   = glslify({ frag: './frag.glsl', vert: './linear.glsl' })(gl)
 var names    = Object.keys(shaders)
 var selected = null
 var model    = mat4.create()
